@@ -1,0 +1,16 @@
+src/**/bin/**
+src/**/obj/**
+src/packages/**
+
+**.suo
+**.user
+**.DotSettings
+
+**.sln.ide/**
+**.vs/**
+.vs/**
+
+[Bb]in/
+[Oo]bj/
+*.nugetreferenceswitcher
+**/project.lock.json
