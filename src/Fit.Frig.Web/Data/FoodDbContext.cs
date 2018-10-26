@@ -4,14 +4,16 @@ using System.Text;
 using Fit.Frig.Web.Data.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace Fit.Frig.Web.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class FoodDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options)
-        {
+        public DbSet<Food> Food { get; set; }
+
+        public FoodDbContext(DbContextOptions<FoodDbContext> options) : base(options)
+        {            
         }
     }
 }
