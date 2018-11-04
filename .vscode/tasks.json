@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/src/Fit.Frig.Web/Fit.Frig.Web.csproj"
+                "${workspaceFolder}/src/FitFrig.Web/FitFrig.Web.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

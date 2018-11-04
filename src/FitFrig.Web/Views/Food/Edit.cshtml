@@ -1,0 +1,25 @@
+@model FitFrig.Web.Data.Models.Food
+
+@{
+    ViewData["Title"] = "Edit Food";
+}
+
+<div class="row">
+    <div>Food</div>
+
+    <div>Edit food</div>
+    <form asp-action="Edit" asp-controller="Food" asp-route-id="@Model.Id" method="PUT" id="editfoodform" class="navbar-right">
+        <div class="form-group">
+            <label asp-for="Name" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </form>
+</div>

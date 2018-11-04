@@ -14,4 +14,4 @@ src/packages/**
 [Oo]bj/
 *.nugetreferenceswitcher
 **/project.lock.json
-src/Fit.Frig.Web/appsettings.Development.json
+src/FitFrig.Web/appsettings.Development.json

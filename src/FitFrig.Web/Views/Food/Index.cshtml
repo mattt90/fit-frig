@@ -1,0 +1,26 @@
+﻿@using System.Collections.Generic
+@model IEnumerable<FitFrig.Web.Data.Models.Food>
+
+@{
+    ViewData["Title"] = "Food Index Page";
+}
+
+<div class="row">
+    <div>Food</div>
+    <div>
+        <a asp-action="Add" asp-controller="Food">Add</a>
+    </div>
+    <ul>
+    @foreach (var food in Model)
+    {
+        <li class="food-item">
+            <div>@food.Name</div>
+            <div>                
+                <a asp-action="Details" asp-controller="Food" asp-route-id="@food.Id">Details</a>
+                <a asp-action="Edit" asp-controller="Food" asp-route-id="@food.Id">Edit</a>
+                <a asp-action="Delete" asp-controller="Food" asp-route-id="@food.Id">Delete</a>
+            </div>
+        </li>
+    }
+    </ul>
+</div>

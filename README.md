@@ -2,7 +2,7 @@
 Frig storage and fitness tracker
 
 ## Database migrations
-cd src/Fit.Frig.Web
+cd src/FitFrig.Web
 
 ### Add new migration
 dotnet ef migrations add {Migration name}

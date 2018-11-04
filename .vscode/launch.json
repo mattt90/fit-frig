@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/src/Fit.Frig.Web/bin/Debug/netcoreapp2.1/Fit.Frig.Web.dll",
+            "program": "${workspaceFolder}/src/FitFrig.Web/bin/Debug/netcoreapp2.1/FitFrig.Web.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/src/Fit.Frig.Web",
+            "cwd": "${workspaceFolder}/src/FitFrig.Web",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
             "launchBrowser": {
