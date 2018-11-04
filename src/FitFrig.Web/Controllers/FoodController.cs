@@ -36,7 +36,17 @@ namespace FitFrig.Web.Controllers
             return View(foodItem);
         }
 
-        [HttpDelete("{id}")]
+        [HttpGet("{id}")]
+        public IActionResult ConfirmDelete(
+            [FromRoute]int id,
+            CancellationToken cancellationToken = default(CancellationToken))
+        {
+            //prompt that confirms delete
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost("{id}")]
         public IActionResult Delete(
             [FromRoute]int id,
             CancellationToken cancellationToken = default(CancellationToken))
@@ -61,7 +71,7 @@ namespace FitFrig.Web.Controllers
             return View(foodItem);
         }
 
-        [HttpPut("{id}")]
+        [HttpPost("{id}")]
         public IActionResult Edit(
             [FromRoute]int id,
             [FromForm]FoodInfo foodInfo,
